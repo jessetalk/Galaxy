@@ -1,0 +1,138 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Galaxy.Product/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Galaxy.Product.Abstraction": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Galaxy.Product.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Galaxy.Product.dll": {}
+        }
+      },
+      "Galaxy.Product.Abstraction/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/Galaxy.Product.Abstraction.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Galaxy.Product.Abstraction.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0": {
+      "sha512": "ofQRroDlzJ0xKOtzNuaVt6QKNImFkhkG0lIMpGl7PtXnIf5SuLWBeiQZAP8DNSxDBJJdcsPkiJiMYK2WA5H8dQ==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
+    "Galaxy.Product/1.0.0": {
+      "type": "project",
+      "path": "../Galaxy.Product/Galaxy.Product.csproj",
+      "msbuildProject": "../Galaxy.Product/Galaxy.Product.csproj"
+    },
+    "Galaxy.Product.Abstraction/1.0.0": {
+      "type": "project",
+      "path": "../Galaxy.Product.Abstraction/Galaxy.Product.Abstraction.csproj",
+      "msbuildProject": "../Galaxy.Product.Abstraction/Galaxy.Product.Abstraction.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "Galaxy.Product >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\liutengfei\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\jesse-cx\\code\\demo\\GrpcDemo\\Galaxy.Product.WebHost\\Galaxy.Product.WebHost.csproj",
+      "projectName": "Galaxy.Product.WebHost",
+      "projectPath": "D:\\jesse-cx\\code\\demo\\GrpcDemo\\Galaxy.Product.WebHost\\Galaxy.Product.WebHost.csproj",
+      "packagesPath": "C:\\Users\\liutengfei\\.nuget\\packages\\",
+      "outputPath": "D:\\jesse-cx\\code\\demo\\GrpcDemo\\Galaxy.Product.WebHost\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\liutengfei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://192.168.61.205:8910/nuget": {},
+        "http://nuget.byzan.iubang.com/v3/index.json": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "D:\\jesse-cx\\code\\demo\\GrpcDemo\\Galaxy.Product\\Galaxy.Product.csproj": {
+              "projectPath": "D:\\jesse-cx\\code\\demo\\GrpcDemo\\Galaxy.Product\\Galaxy.Product.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

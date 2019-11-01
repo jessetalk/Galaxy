@@ -1,0 +1,3 @@
+D:\jesse-cx\code\demo\GrpcDemo\Galaxy.Product\bin\Debug\netcoreapp3.0\Galaxy.Product.Abstraction.dll
+D:\jesse-cx\code\demo\GrpcDemo\Galaxy.Product\obj\Debug\netcoreapp3.0\Galaxy.Product.AssemblyInfoInputs.cache
+D:\jesse-cx\code\demo\GrpcDemo\Galaxy.Product\obj\Debug\netcoreapp3.0\Galaxy.Product.AssemblyInfo.cs

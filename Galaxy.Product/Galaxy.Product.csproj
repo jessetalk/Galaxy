@@ -5,16 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Grpc.Net.Client" Version="2.24.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GrpcDemo.Abstraction\GrpcDemo.Abstraction.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\" />
+    <ProjectReference Include="..\Galaxy.Product.Abstraction\Galaxy.Product.Abstraction.csproj" />
   </ItemGroup>
 
 </Project>
