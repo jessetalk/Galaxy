@@ -110,6 +110,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.24.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[3.0.0, )"

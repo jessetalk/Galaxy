@@ -39,7 +39,7 @@ namespace GrpcDemo.ApiClient
 
             var content = new StringContent(str);
             content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-            var response = await httpclient.PostAsync($"http://192.168.69.80:5000/Caculator", content);
+            var response = await httpclient.PostAsync($"http://localhost:5000/Caculator", content);
             var result = await response.Content.ReadAsStringAsync();
             var objResult = JsonConvert.DeserializeObject<MultiplyResult>(result);
             Console.WriteLine($" {mulitply.X} X {mulitply.Y} = { objResult.Result } ");

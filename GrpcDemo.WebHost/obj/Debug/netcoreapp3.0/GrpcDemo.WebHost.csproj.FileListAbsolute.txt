@@ -28,3 +28,5 @@ D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo.WebHost\obj\Debug\netcoreapp3.0\GrpcDemo
 D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo.WebHost\obj\Debug\netcoreapp3.0\GrpcDemo.WebHost.csproj.CopyComplete
 D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo.WebHost\obj\Debug\netcoreapp3.0\GrpcDemo.WebHost.dll
 D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo.WebHost\obj\Debug\netcoreapp3.0\GrpcDemo.WebHost.pdb
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo.WebHost\bin\Debug\netcoreapp3.0\Grpc.Net.Client.dll
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo.WebHost\bin\Debug\netcoreapp3.0\Grpc.Net.Common.dll

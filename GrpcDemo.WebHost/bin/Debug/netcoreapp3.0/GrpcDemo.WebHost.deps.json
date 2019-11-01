@@ -132,7 +132,7 @@
           "Microsoft.Extensions.Identity.Stores": "3.0.0.0",
           "Microsoft.Extensions.Localization.Abstractions": "3.0.0.0",
           "Microsoft.Extensions.Localization": "3.0.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "3.0.0.0",
+          "Microsoft.Extensions.Logging.Abstractions.Reference": "3.0.0.0",
           "Microsoft.Extensions.Logging.Configuration": "3.0.0.0",
           "Microsoft.Extensions.Logging.Console": "3.0.0.0",
           "Microsoft.Extensions.Logging.Debug": "3.0.0.0",
@@ -175,7 +175,7 @@
           "System.Data": "4.0.0.0",
           "System.Diagnostics.Contracts": "4.0.3.0",
           "System.Diagnostics.Debug": "4.1.1.0",
-          "System.Diagnostics.DiagnosticSource": "4.0.4.0",
+          "System.Diagnostics.DiagnosticSource.Reference": "4.0.4.0",
           "System.Diagnostics.EventLog": "4.0.1.0",
           "System.Diagnostics.FileVersionInfo": "4.0.3.0",
           "System.Diagnostics.Process": "4.2.1.0",
@@ -329,7 +329,39 @@
           "lib/netstandard2.0/Grpc.Core.Api.dll": {}
         }
       },
+      "Grpc.Net.Client/2.24.0": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.24.0",
+          "Grpc.Net.Common": "2.24.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
+          "System.Diagnostics.DiagnosticSource": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Net.Client.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.24.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Grpc.Net.Client.dll": {}
+        }
+      },
+      "Grpc.Net.Common/2.24.0": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.24.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Net.Common.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.24.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Grpc.Net.Common.dll": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0": {},
+      "Microsoft.Extensions.Logging.Abstractions/2.1.1": {},
       "Microsoft.NETCore.Platforms/2.1.0": {},
       "protobuf-net/2.4.1": {
         "dependencies": {
@@ -361,6 +393,7 @@
           "lib/netstandard2.1/protobuf-net.Grpc.dll": {}
         }
       },
+      "System.Diagnostics.DiagnosticSource/4.5.1": {},
       "System.Memory/4.5.3": {},
       "System.Private.ServiceModel/4.5.3": {
         "dependencies": {
@@ -415,6 +448,7 @@
       },
       "GrpcDemo/1.0.0": {
         "dependencies": {
+          "Grpc.Net.Client": "2.24.0",
           "GrpcDemo.Abstraction": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0"
         },
@@ -1078,7 +1112,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.Logging.Abstractions/3.0.0.0": {
+      "Microsoft.Extensions.Logging.Abstractions.Reference/3.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Logging.Abstractions.dll": {}
         },
@@ -1336,7 +1370,7 @@
         },
         "compileOnly": true
       },
-      "System.Diagnostics.DiagnosticSource/4.0.4.0": {
+      "System.Diagnostics.DiagnosticSource.Reference/4.0.4.0": {
         "compile": {
           "System.Diagnostics.DiagnosticSource.dll": {}
         },
@@ -2143,12 +2177,33 @@
       "path": "grpc.core.api/2.24.0",
       "hashPath": "grpc.core.api.2.24.0.nupkg.sha512"
     },
+    "Grpc.Net.Client/2.24.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jX9HT3D8lfceTWT6ZFKEPkG+9MjPE4jO5ze5PeQuazDuVUF+IzyVZctqc0zWaA2IfmjCVKXIcDnkq/onoWY9Pg==",
+      "path": "grpc.net.client/2.24.0",
+      "hashPath": "grpc.net.client.2.24.0.nupkg.sha512"
+    },
+    "Grpc.Net.Common/2.24.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7cKGoSGVkhzFid0sDnTJ3K7jbPJeWAZtFgYn/Jpy24OqZ+FAUu/ATlOAc0zNNCMXCYJaK6sThm0YP6AKxqtAJg==",
+      "path": "grpc.net.common/2.24.0",
+      "hashPath": "grpc.net.common.2.24.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-ofQRroDlzJ0xKOtzNuaVt6QKNImFkhkG0lIMpGl7PtXnIf5SuLWBeiQZAP8DNSxDBJJdcsPkiJiMYK2WA5H8dQ==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/3.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XRzK7ZF+O6FzdfWrlFTi1Rgj2080ZDsd46vzOjadHUB0Cz5kOvDG8vI7caa5YFrsHQpcfn0DxtjS4E46N4FZsA==",
+      "path": "microsoft.extensions.logging.abstractions/2.1.1",
+      "hashPath": "microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
       "type": "package",
@@ -2170,6 +2225,13 @@
       "sha512": "sha512-HI+vUIXQ9eYczAfpFTug4xMSCjxixa8boEe3bOprDZH7J3+/SGdqLj6ssx0shes2r+oQD9GB9L9MSuc6ZjAjqQ==",
       "path": "protobuf-net.grpc/1.0.13",
       "hashPath": "protobuf-net.grpc.1.0.13.nupkg.sha512"
+    },
+    "System.Diagnostics.DiagnosticSource/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zCno/m44ymWhgLFh7tELDG9587q0l/EynPM0m4KgLaWQbz/TEKvNRX2YT5ip2qXW/uayifQ2ZqbnErsKJ4lYrQ==",
+      "path": "system.diagnostics.diagnosticsource/4.5.1",
+      "hashPath": "system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512"
     },
     "System.Memory/4.5.3": {
       "type": "package",
@@ -2758,7 +2820,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.Logging.Abstractions/3.0.0.0": {
+    "Microsoft.Extensions.Logging.Abstractions.Reference/3.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -2973,7 +3035,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Diagnostics.DiagnosticSource/4.0.4.0": {
+    "System.Diagnostics.DiagnosticSource.Reference/4.0.4.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
