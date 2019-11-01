@@ -1,0 +1,11 @@
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo\bin\Debug\netcoreapp3.0\GrpcDemo.deps.json
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo\bin\Debug\netcoreapp3.0\GrpcDemo.dll
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo\bin\Debug\netcoreapp3.0\GrpcDemo.pdb
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo\bin\Debug\netcoreapp3.0\GrpcDemo.Abstraction.dll
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo\bin\Debug\netcoreapp3.0\GrpcDemo.Abstraction.pdb
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo\obj\Debug\netcoreapp3.0\GrpcDemo.csprojAssemblyReference.cache
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo\obj\Debug\netcoreapp3.0\GrpcDemo.AssemblyInfoInputs.cache
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo\obj\Debug\netcoreapp3.0\GrpcDemo.AssemblyInfo.cs
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo\obj\Debug\netcoreapp3.0\GrpcDemo.csproj.CopyComplete
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo\obj\Debug\netcoreapp3.0\GrpcDemo.dll
+D:\jesse-cx\code\demo\GrpcDemo\GrpcDemo\obj\Debug\netcoreapp3.0\GrpcDemo.pdb
