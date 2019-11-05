@@ -1,5 +1,7 @@
 ﻿using Galaxy.Product.Abstraction;
 using Galaxy.Product.Abstraction.Models.Dtos;
+using Galaxy.Product.Entity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,13 +12,11 @@ namespace Galaxy.Product
 {
     public class ProductService : IProductService
     {
-        private List<ProductDto> products { get; set; }
+        private ProductContext context { get; set; }
 
-        public ProductService()
+        public ProductService(ProductContext context)
         {
-            products = new List<ProductDto>();
-            products.Add(new ProductDto() { Id = "1", Name = "Apple" });
-            products.Add(new ProductDto() { Id = "2", Name = "Orange" });
+            this.context = context;
         }
 
         public Task<ProductDto> CreateAsync(ProductDto product)
@@ -26,12 +26,10 @@ namespace Galaxy.Product
 
         public async Task<IEnumerable<ProductDto>> GetListAsync(ProductQueryDto query)
         {
-            var task = await Task.Run(() =>
-            {
-                Thread.Sleep(100);
-                return products.AsEnumerable();
-            });
-            return task;
+            var entities = await this.context.Set<ProductEntity>().ToListAsync();
+            var products = new List<ProductDto>();
+            entities.ForEach(entity => products.Add(new ProductDto() { Id = entity.Id, Name = entity.Name }));
+            return products;
         }
     }
 }
