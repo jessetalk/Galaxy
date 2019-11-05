@@ -20,6 +20,8 @@ namespace Galaxy.Product.GrpcHost
             services.AddCodeFirstGrpc(config => {
                 config.ResponseCompressionLevel = System.IO.Compression.CompressionLevel.Optimal;
             });
+
+            services.AddProductService();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

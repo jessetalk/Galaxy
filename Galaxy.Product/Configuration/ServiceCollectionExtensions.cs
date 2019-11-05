@@ -1,6 +1,8 @@
 ﻿using Galaxy.Product;
 using Galaxy.Product.Abstraction;
+using Galaxy.Product.Entity;
 using Grpc.Net.Client;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ProtoBuf.Grpc.Client;
 using System;
@@ -14,6 +16,8 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddProductService(this IServiceCollection services)
         {
             services.AddScoped<IProductService, ProductService>();
+            services.AddDbContext();
+
             return services;
         }
 
@@ -31,6 +35,12 @@ namespace Microsoft.Extensions.DependencyInjection
                 return channel.CreateGrpcService<IProductService>();
             });
 
+            return services;
+        }
+    
+        private static IServiceCollection AddDbContext(this IServiceCollection services)
+        {
+            services.AddDbContext<ProductContext>(option => option.UseMySql("server=mysql.zzhong.me;userid=lims;password=Dev@2017;database=Galaxy;"));
             return services;
         }
     }
