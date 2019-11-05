@@ -25,5 +25,12 @@ namespace Galaxy.Product.WebHost.Controllers
             return await _productService.CreateAsync(product);
         }
 
+        [Route("")]
+        [HttpGet]
+        public async Task<IEnumerable<ProductDto>> GetListAsync([FromQuery]ProductQueryDto query)
+        {
+
+            return await _productService.GetListAsync(query);
+        }
     }
 }
