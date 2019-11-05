@@ -27,6 +27,6 @@ namespace GrpcDemo.Server
                         listenOptions.Protocols = HttpProtocols.Http2;
                     });
                 })
-            .UseStartup<Startup>();       
+                .UseStartup<Startup>();       
     }
 }

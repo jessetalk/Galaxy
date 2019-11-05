@@ -7,8 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ProtoBuf.Grpc.Server;
 
-namespace Galaxy.Order.WebHost
+namespace Galaxy.Product.GrpcHost
 {
     public class Startup
     {
@@ -16,11 +17,8 @@ namespace Galaxy.Order.WebHost
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-            services.AddOrderService();
-            services.AddProductServiceAsGrpc(options =>
-            {
-                options.ServerAddress = "http://localhost:10042";
+            services.AddCodeFirstGrpc(config => {
+                config.ResponseCompressionLevel = System.IO.Compression.CompressionLevel.Optimal;
             });
         }
 
@@ -36,7 +34,7 @@ namespace Galaxy.Order.WebHost
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapGrpcService<ProductService>();
             });
         }
     }

@@ -24,9 +24,9 @@ namespace Galaxy.Product
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<ProductDto>> GetListAsync(ProductQueryDto query)
+        public async Task<IEnumerable<ProductDto>> GetListAsync(ProductQueryDto query)
         {
-            var task = Task.Run(() =>
+            var task = await Task.Run(() =>
             {
                 Thread.Sleep(100);
                 return products.AsEnumerable();

@@ -1,5 +1,6 @@
 ﻿using Galaxy.Order.Abstraction;
 using Galaxy.Order.Abstraction.Models.Dtos;
+using Galaxy.Product.Abstraction;
 using Galaxy.Product.Abstraction.Models.Dtos;
 using System;
 using System.Collections.Generic;
@@ -11,8 +12,11 @@ namespace Galaxy.Order
 {
     public class OrderService : IOrderService
     {
-        public OrderService()
+        private IProductService productService { get; set; }
+
+        public OrderService(IProductService productService)
         {
+            this.productService = productService;
         }
 
         public Task<OrderDto> CreateAsync(OrderDto Order)
@@ -20,10 +24,10 @@ namespace Galaxy.Order
             throw new NotImplementedException();
         }
 
-        public Task<OrderDto> GetAsync(string id)
+        public async Task<OrderDto> GetAsync(string id)
         {
-            var items = new List<ProductDto>();
-            var task = Task.Run(() =>
+            var items = await this.productService.GetListAsync(new ProductQueryDto());
+            var task = await Task.Run(() =>
             {
                 Thread.Sleep(100);
                 return new OrderDto() { Id = id, OrderNo = "1234", ProductItems = items };

@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Galaxy.Order.Abstraction\Galaxy.Order.Abstraction.csproj" />
     <ProjectReference Include="..\Galaxy.Order\Galaxy.Order.csproj" />
+    <ProjectReference Include="..\Galaxy.Product\Galaxy.Product.csproj" />
   </ItemGroup>
 
 </Project>
