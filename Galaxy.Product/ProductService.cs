@@ -5,10 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Volo.Abp.Application.Services;
 
 namespace Galaxy.Product
 {
-    public class ProductService : IProductService
+    
+    public class ProductService : ApplicationService, IProductService
     {
         private List<ProductDto> products { get; set; }
 
