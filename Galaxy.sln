@@ -5,19 +5,19 @@ VisualStudioVersion = 16.0.29318.209
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{1D571052-B265-4986-9860-46D808564655}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Product.Abstraction", "Galaxy.Product.Abstraction\Galaxy.Product.Abstraction.csproj", "{A92C1949-E692-447B-A5A9-D8761EE575C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Product.Contracts", "Galaxy.Product.Contracts\Galaxy.Product.Contracts.csproj", "{A92C1949-E692-447B-A5A9-D8761EE575C5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Product", "Galaxy.Product\Galaxy.Product.csproj", "{DD1CFE59-D751-4E31-9044-AE81C7649920}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Order", "Galaxy.Order\Galaxy.Order.csproj", "{ED306E95-C79E-4D30-865E-1B86EB00D71A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Order.Abstraction", "Galaxy.Order.Abstraction\Galaxy.Order.Abstraction.csproj", "{881D555F-A852-4CF9-B5A6-F1DD0DDA68C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Order.Contracts", "Galaxy.Order.Contracts\Galaxy.Order.Contracts.csproj", "{881D555F-A852-4CF9-B5A6-F1DD0DDA68C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Product.API", "Galaxy.Product.API\Galaxy.Product.API.csproj", "{7E8D9548-69CD-435C-8AB2-F69767617B16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Product.API", "Galaxy.Product.API\Galaxy.Product.API.csproj", "{7E8D9548-69CD-435C-8AB2-F69767617B16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Order.Api", "Galaxy.Order.Api\Galaxy.Order.Api.csproj", "{CA8C66F2-E71D-4B37-9871-FC26A9CFFAA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Order.Api", "Galaxy.Order.Api\Galaxy.Order.Api.csproj", "{CA8C66F2-E71D-4B37-9871-FC26A9CFFAA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.Api", "Galaxy.Api\Galaxy.Api.csproj", "{B48457DC-CFC5-49B3-8370-CD038E5B140D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.Api", "Galaxy.Api\Galaxy.Api.csproj", "{B48457DC-CFC5-49B3-8370-CD038E5B140D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

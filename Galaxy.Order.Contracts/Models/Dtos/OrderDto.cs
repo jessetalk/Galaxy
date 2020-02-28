@@ -1,9 +1,7 @@
-﻿using Galaxy.Product.Abstraction.Models.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using Galaxy.Product.Contracts.Models.Dtos;
 
-namespace Galaxy.Order.Abstraction.Models.Dtos
+namespace Galaxy.Order.Contracts.Models.Dtos
 {
     public class OrderDto
     {

@@ -1,15 +1,14 @@
-﻿using Galaxy.Product.Abstraction;
-using Galaxy.Product.Abstraction.Models.Dtos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Galaxy.Product.Contracts;
+using Galaxy.Product.Contracts.Models.Dtos;
 using Volo.Abp.Application.Services;
 
 namespace Galaxy.Product
 {
-    
     public class ProductService : ApplicationService, IProductService
     {
         private List<ProductDto> products { get; set; }

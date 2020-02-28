@@ -1,16 +1,15 @@
-﻿using Galaxy.Order.Abstraction;
-using Galaxy.Order.Abstraction.Models.Dtos;
-using Galaxy.Product.Abstraction;
-using Galaxy.Product.Abstraction.Models.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Galaxy.Order.Contracts;
+using Galaxy.Order.Contracts.Models.Dtos;
+using Galaxy.Product.Contracts;
+using Galaxy.Product.Contracts.Models.Dtos;
+using Volo.Abp.Application.Services;
 
 namespace Galaxy.Order
 {
-    public class OrderService : IOrderService
+    public class OrderService : ApplicationService, IOrderService
     {
         private IProductService productService { get; set; }
 
