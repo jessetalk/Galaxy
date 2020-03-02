@@ -1,14 +1,9 @@
-﻿using Galaxy.Product.Abstraction;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Galaxy.Product.Contracts;
 using Volo.Abp.Modularity;
 
 namespace Galaxy.Product
 {
-    [DependsOn(typeof(GalaxyProductAbstractionModule))]
-    public class GalaxyProductModule: AbpModule
+    public class GalaxyProductModule : AbpModule
     {
-
     }
 }

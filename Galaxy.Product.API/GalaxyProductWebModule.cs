@@ -1,24 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Volo.Abp;
-using Volo.Abp.AspNetCore.Mvc;
-using Volo.Abp.Modularity;
-using Galaxy.Product;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
-using Microsoft.AspNetCore.Builder;
+using Volo.Abp;
+using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
+using Volo.Abp.Modularity;
 
 namespace Galaxy.Product.API
 {
-
-
     [DependsOn(typeof(AbpAspNetCoreMvcModule))]
     [DependsOn(typeof(AbpAutofacModule), typeof(GalaxyProductModule))]
-
-    public class GalaxyProductWebModule:AbpModule
+    public class GalaxyProductWebModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
@@ -28,7 +20,6 @@ namespace Galaxy.Product.API
             });
 
             ConfigureSwaggerServices(context.Services);
-
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -44,8 +35,6 @@ namespace Galaxy.Product.API
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "Product API");
             });
-
-
         }
 
         private void ConfigureSwaggerServices(IServiceCollection services)

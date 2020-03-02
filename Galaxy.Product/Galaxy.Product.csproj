@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Galaxy.Product.Abstraction\Galaxy.Product.Abstraction.csproj" />
+    <ProjectReference Include="..\Galaxy.Product.Contracts\Galaxy.Product.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

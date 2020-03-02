@@ -4,4 +4,16 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="2.1.1" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="2.1.1" />
+    <PackageReference Include="Volo.Abp.Core" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Galaxy.Order\Galaxy.Order.csproj" />
+    <ProjectReference Include="..\Galaxy.Product\Galaxy.Product.csproj" />
+  </ItemGroup>
+
 </Project>
