@@ -5,11 +5,13 @@ using Microsoft.OpenApi.Models;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
+using Volo.Abp.Http.Client;
 using Volo.Abp.Modularity;
 
 namespace Galaxy.Order.Api
 {
     [DependsOn(typeof(AbpAspNetCoreMvcModule))]
+    [DependsOn(typeof(AbpHttpClientModule))]
     [DependsOn(typeof(AbpAutofacModule), typeof(GalaxyOrderModule))]
     public class GalaxyOrderWebModule : AbpModule
     {
